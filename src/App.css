@@ -13,10 +13,6 @@ html {
   margin-left: 4rem;
 }
 
-.smooth-scroll-container {
-  scroll-behavior: smooth;
-}
-
 .laptopImg {
   width: 300px;
   height: 300px;
