@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import Poza from "../../images/Eu.png";
+import { NavLink } from "react-router-dom";
 export function HomeComponent() {
   return (
     <Grid container>
@@ -15,11 +16,11 @@ export function HomeComponent() {
         <img src={Poza} className="myImg" alt="My Image" />
       </Grid>
       <Grid item md={4} xs={12}>
-        <Typography color={"#149ECA"} variant="h4">
+        <Typography className="mobileText" color={"#149ECA"} variant="h4">
           Technologies |{" "}
         </Typography>
       </Grid>
-      <Grid sx={{}} item md={8} xs={12}>
+      <Grid item md={8} xs={12}>
         <Box>
           <img className="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
           <img className="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
@@ -42,10 +43,27 @@ export function HomeComponent() {
           />
         </Box>
       </Grid>
-      <Box>
-        <h1>Aici trebuie sa adaug linkedin</h1>
-        <h1>Aici trebuie sa adaug Github</h1>
-      </Box>
+      <Grid mt={8} container>
+        <Grid item md={8} xs={12}>
+          <Typography className="mobileText" variant="h3">
+            You can find me on Github or Linkedin
+          </Typography>
+        </Grid>
+        <Grid item className="iconSocialMobile" md={4} xs={12}>
+          <NavLink to={"https://www.linkedin.com/in/mario-salman/"} target="_blank">
+            <img
+              className="iconSocial"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            />
+          </NavLink>
+          <NavLink to={"https://github.com/SalmanMario"} target="_blank">
+            <img
+              className="iconSocial"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            />
+          </NavLink>
+        </Grid>
+      </Grid>
     </Grid>
   );
 }

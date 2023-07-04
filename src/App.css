@@ -5,8 +5,8 @@
 html,
 body,
 #fullheight {
-  min-height: 100% !important;
-  height: 100%;
+  /* min-height: 100% !important; */
+  /* height: 100%; */
   background-color: #23272f;
 }
 
@@ -15,7 +15,7 @@ body,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50%;
+  height: 100vh;
 }
 
 .about-container {
@@ -23,7 +23,7 @@ body,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50%;
+  height: 50%;
 }
 
 .pokemon-container {
@@ -31,7 +31,7 @@ body,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 75%;
+  height: 75%;
 }
 
 .header {
@@ -45,20 +45,6 @@ body,
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-}
-
-.left-section,
-.right-section {
-  width: 50%;
-  padding: 2rem;
-}
-
-.left-section {
-  text-align: left;
-}
-
-.right-section {
-  text-align: right;
 }
 
 img {
@@ -77,9 +63,31 @@ img {
   margin-left: 4rem;
 }
 
+.iconSocial {
+  width: 35px;
+  height: 35px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .laptopImg {
-  width: 300px;
+  width: 330px;
   height: 300px;
+}
+
+.mobile-intro-container {
+  margin-top: 4.5rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.projectAlign {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 2rem 0px 2rem;
+  flex-direction: column;
+  height: 100%;
 }
 
 @media (max-width: 600px) {
@@ -87,13 +95,33 @@ img {
     flex-direction: column;
   }
 
-  .portfolio-container {
-    min-height: auto;
+  .iconSocial {
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
-  .left-section,
-  .right-section {
-    width: 100%;
+  .projectAlign {
+    margin: 0px;
+  }
+
+  .mobileButtons {
+    width: 100% !important;
+  }
+
+  .mobileText {
     text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .iconSocialMobile {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .social {
+    text-align: center;
+    padding-bottom: 2rem;
   }
 }

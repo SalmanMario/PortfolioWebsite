@@ -1,10 +1,6 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Container, Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 interface CardProjectProps {
@@ -14,33 +10,58 @@ interface CardProjectProps {
     description: string;
     repository: string;
     liveCode: string;
+    items: string[];
+    id: number;
   };
 }
 
 export function CardProject(props: CardProjectProps) {
-  const { cardImage, projectName, repository, liveCode, description } = props.data;
+  const { cardImage, projectName, repository, liveCode, description, items } = props.data;
+  const isImageLeftLayout = props.data.id % 2 === 1; // Set image on the left for odd ids, otherwise set image on the right
+
   return (
     <Container>
-      <Grid>
-        <Card sx={{ width: 300, margin: "auto" }}>
-          <CardMedia sx={{ height: 200 }} image={cardImage} title={projectName} />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+      <Grid mb={4} container>
+        <Grid item md={isImageLeftLayout ? 6 : 6} xs={12} style={{ order: isImageLeftLayout ? 1 : 2 }}>
+          <img width={650} src={cardImage} alt="" />
+        </Grid>
+        <Grid item md={isImageLeftLayout ? 6 : 6} xs={12} style={{ order: isImageLeftLayout ? 2 : 1 }}>
+          <Box className="projectAlign">
+            <Typography textAlign={"center"} mb={1} variant="h3">
               {projectName}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <NavLink to={repository}>
-              <Button variant="contained">Repository</Button>
-            </NavLink>
-            <NavLink to={liveCode}>
-              <Button variant="contained">Live Code</Button>
-            </NavLink>
-          </CardActions>
-        </Card>
+            <Typography variant="h6">{description}</Typography>
+            <Box
+              className="mobileIcons"
+              sx={{ display: "flex", justifyContent: "center", flexDirection: "row", flexWrap: "nowrap" }}
+            >
+              {items.map((elem) => (
+                <Box
+                  key={elem}
+                  sx={{ display: "flex", justifyContent: "center", flexDirection: "column", marginTop: 2 }}
+                >
+                  <img src={elem} className="iconSocial" alt="" />
+                </Box>
+              ))}
+            </Box>
+            <Grid container>
+              <Grid sx={{ paddingLeft: 4, paddingRight: 4 }} item xs={12} md={6}>
+                <NavLink to={repository} target="_blank">
+                  <Button className="mobileButtons" sx={{ color: "#149ECA" }} variant="contained" fullWidth>
+                    Repository
+                  </Button>
+                </NavLink>
+              </Grid>
+              <Grid sx={{ paddingLeft: 4, paddingRight: 4 }} item xs={12} md={6}>
+                <NavLink to={liveCode} target="_blank">
+                  <Button className="mobileButtons" sx={{ color: "#149ECA" }} variant="contained" fullWidth>
+                    Live Code
+                  </Button>
+                </NavLink>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
       </Grid>
     </Container>
   );

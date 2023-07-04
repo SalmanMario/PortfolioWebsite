@@ -25,13 +25,14 @@ export const palette = {
     h6: {
       color: "#d2d0d0",
       fontFamily: "Inter",
-      fontSize: "1rem",
+      fontSize: "0.9rem",
     },
     button: {
       marginBottom: "1rem",
       marginTop: "1rem",
       fontFamily: "Montserrat",
       fontWeight: 700,
+      backgroundColor: "#191B21",
     },
   },
   components: {

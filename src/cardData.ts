@@ -1,50 +1,76 @@
 import WorldOfBooks from "./images/worldOfBooks.png";
 import pokemon from "./images/pokemonApi.png";
+import poe from "./images/poe.png";
+import firebase from "./images/Firebase.png";
+import spotify from "./images/spotify.png";
 
 export const CardInformation = [
   {
     id: 1,
-    cardImage: WorldOfBooks,
-    projectName: "WorldOfBooks",
+    cardImage: poe,
+    projectName: "PoE Builds",
     description:
-      "My first 'Big Project' and the final project from the course ITSchool,a library with a custom api built with React,Material-UI and frameworks such as Zod,React-Query,Router-Dom.You can create,edit and delete a book, like a living library.",
-    repository: "https://github.com/SalmanMario/Big-Project",
-    liveCode: "https://worldofbooksproject.netlify.app",
+      "This serves as a historical log for my favorite game.This is my first personal project.Every 3-4 months I'm saving the builds I played this league.",
+    repository: "https://github.com/SalmanMario/PoeBuildsVite",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    ],
+    liveCode: "https://poebuilds.netlify.app/",
   },
   {
     id: 2,
-    cardImage: pokemon,
-    projectName: "Pokemon Api",
+    cardImage: firebase,
+    projectName: "To Do Firebase",
     description:
-      "A fun project,PokeDex is a website where you can search and find information about your favorite Pokemons.The first project built with Typescript,React,Material-UI",
-    repository: "https://github.com/SalmanMario/Pokemon",
-    liveCode: "https://pokemondexapi.netlify.app",
+      "For my second project, I decided to create a simple yet functional To-Do list. My main motivation was to gain experience working with databases. This application allows users to register an account, log in, and perform essential actions like creating, editing, and deleting tasks.",
+    repository: "https://github.com/SalmanMario/To-Do-Project",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    ],
+    liveCode: "https://todoprojectfirebase.netlify.app/",
   },
   {
     id: 3,
-    cardImage: pokemon,
-    projectName: "Pokemon Api",
+    cardImage: WorldOfBooks,
+    projectName: "WorldOfBooks",
     description:
-      "A fun project,PokeDex is a website where you can search and find information about your favorite Pokemons.The first project built with Typescript,React,Material-UI",
-    repository: "https://github.com/SalmanMario/Pokemon",
-    liveCode: "https://pokemondexapi.netlify.app",
+      "The very first 'Big Project' and the culminating assignment from my course at ITSchool was an ambitious library application.This project aimed to create a living library experience, complete with a custom API. Users were empowered to create, edit, and delete books, making it an immersive and interactive platform.",
+    repository: "https://github.com/SalmanMario/Big-Project",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    ],
+    liveCode: "https://worldofbooksproject.netlify.app",
   },
   {
     id: 4,
     cardImage: pokemon,
     projectName: "Pokemon Api",
     description:
-      "A fun project,PokeDex is a website where you can search and find information about your favorite Pokemons.The first project built with Typescript,React,Material-UI",
+      "I took on a fun project called PokeDex a website where you can search and find information about your beloved Pokemons. It was an exciting milestone as it marked my first venture into using TypeScript. With PokeDex, users can effortlessly explore and access detailed information about their favorite Pokemons.",
     repository: "https://github.com/SalmanMario/Pokemon",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    ],
     liveCode: "https://pokemondexapi.netlify.app",
   },
   {
     id: 5,
-    cardImage: pokemon,
-    projectName: "Pokemon Api",
+    cardImage: spotify,
+    projectName: "Spotify Clone",
     description:
-      "A fun project,PokeDex is a website where you can search and find information about your favorite Pokemons.The first project built with Typescript,React,Material-UI",
-    repository: "https://github.com/SalmanMario/Pokemon",
-    liveCode: "https://pokemondexapi.netlify.app",
+      "The most ambitious project I've been involved in is the 'Spotify Clone' project. It is inspired by Spotify, offering users the ability to stream music directly from the website. Additionally, users can mark songs as favorites and save albums to their collection, among other exciting features.'Early Access' phase.",
+    repository: "https://github.com/SalmanMario/Spotify-Clone-Project",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    ],
+    liveCode: "https://myspotifyprojectclone.netlify.app/",
   },
 ];
