@@ -1,6 +1,6 @@
 import WorldOfBooks from "./images/worldOfBooks.png";
 import pokemon from "./images/pokemonApi.png";
-import poe from "./images/poe.png";
+import poe from "./images/Poe.png";
 import firebase from "./images/Firebase.png";
 import spotify from "./images/spotify.png";
 
