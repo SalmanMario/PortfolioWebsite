@@ -1,8 +1,8 @@
-import Poe from "./images/Poe.png";
-import Firebase from "./images/Firebase.png";
-import WorldOfBooks from "./images/WorldOfBooks.png";
-import Pokemon from "./images/PokemonApi.png";
-import Spotify from "./images/Spotify.png";
+import Poe from "./img/Poe.png";
+import Firebase from "./img/Firebase.png";
+import WorldOfBooks from "./img/WorldOfBooks.png";
+import Pokemon from "./img/PokemonApi.png";
+import Spotify from "./img/Spotify.png";
 
 export const CardInformation = [
   {

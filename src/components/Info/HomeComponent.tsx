@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import Poza from "../../images/Eu.png";
+import Poza from "../../img/Eu.png";
 import { NavLink } from "react-router-dom";
 export function HomeComponent() {
   return (
