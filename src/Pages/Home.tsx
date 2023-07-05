@@ -4,6 +4,7 @@ import { HomeComponent } from "../components/Info/HomeComponent";
 import { CardProject } from "../components/CardProject";
 import { CardInformation } from "../cardData";
 import clsx from "clsx";
+import { Contact } from "../components/Info/Contact";
 
 export function Home() {
   const theme = useTheme();
@@ -30,6 +31,9 @@ export function Home() {
             </Grid>
           ))}
         </Grid>
+      </Box>
+      <Box id="contact">
+        <Contact />
       </Box>
     </Box>
   );

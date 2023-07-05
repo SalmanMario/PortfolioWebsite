@@ -90,6 +90,26 @@ img {
   height: 100%;
 }
 
+.borderColor {
+  border: 2px solid #149eca !important;
+}
+
+.placeholderColor::placeholder {
+  color: #149eca;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.placeholderColor:focus {
+  border-color: #149eca !important;
+  outline: #149eca;
+}
+
+.textarea-active {
+  border-color: #ff0000; /* Border color when the textarea is active */
+}
+
 @media (max-width: 600px) {
   .content {
     flex-direction: column;
