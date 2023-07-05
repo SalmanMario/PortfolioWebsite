@@ -1,11 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material";
-import Laptop from "../../images/Code.png";
+import Code from "../../img/Code.png";
 export function AboutComponent() {
   return (
     <Box>
       <Grid container>
         <Grid item md={6} xs={12}>
-          <img className="laptopImg" src={Laptop} alt="" />
+          <img className="laptopImg" src={Code} alt="" />
         </Grid>
         <Grid item md={6} xs={12}>
           <Typography variant="h3">About Me</Typography>
