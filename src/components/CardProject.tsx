@@ -5,7 +5,8 @@ import { NavLink } from "react-router-dom";
 
 interface CardProjectProps {
   data: {
-    cardImage: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    cardImage: any;
     projectName: string;
     description: string;
     repository: string;

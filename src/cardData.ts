@@ -1,13 +1,13 @@
-import worldOfBooks from "./images/WorldOfBooks.png";
-import pokemon from "./images/PokemonApi.png";
-import poe from "./images/Poe.png";
-import firebase from "./images/Firebase.png";
-import spotify from "./images/Spotify.png";
+import WorldOfBooks from "./images/WorldOfBooks.png";
+import Pokemon from "./images/PokemonApi.png";
+import Poe from "./images/Poe.png";
+import Firebase from "./images/Firebase.png";
+import Spotify from "./images/Spotify.png";
 
 export const CardInformation = [
   {
     id: 1,
-    cardImage: poe,
+    cardImage: Poe,
     projectName: "PoE Builds",
     description:
       "This serves as a historical log for my favorite game.This is my first personal project.Every 3-4 months I'm saving the builds I played this league.",
@@ -20,7 +20,7 @@ export const CardInformation = [
   },
   {
     id: 2,
-    cardImage: firebase,
+    cardImage: Firebase,
     projectName: "To Do Firebase",
     description:
       "For my second project, I decided to create a simple yet functional To-Do list. My main motivation was to gain experience working with databases. This application allows users to register an account, log in, and perform essential actions like creating, editing, and deleting tasks.",
@@ -34,7 +34,7 @@ export const CardInformation = [
   },
   {
     id: 3,
-    cardImage: worldOfBooks,
+    cardImage: WorldOfBooks,
     projectName: "WorldOfBooks",
     description:
       "The very first 'Big Project' and the culminating assignment from my course at ITSchool was an ambitious library application.This project aimed to create a living library experience, complete with a custom API. Users were empowered to create, edit, and delete books, making it an immersive and interactive platform.",
@@ -47,7 +47,7 @@ export const CardInformation = [
   },
   {
     id: 4,
-    cardImage: pokemon,
+    cardImage: Pokemon,
     projectName: "Pokemon Api",
     description:
       "I took on a fun project called PokeDex a website where you can search and find information about your beloved Pokemons. It was an exciting milestone as it marked my first venture into using TypeScript. With PokeDex, users can effortlessly explore and access detailed information about their favorite Pokemons.",
@@ -61,7 +61,7 @@ export const CardInformation = [
   },
   {
     id: 5,
-    cardImage: spotify,
+    cardImage: Spotify,
     projectName: "Spotify Clone",
     description:
       "The most ambitious project I've been involved in is the 'Spotify Clone' project. It is inspired by Spotify, offering users the ability to stream music directly from the website. Additionally, users can mark songs as favorites and save albums to their collection, among other exciting features.'Early Access' phase.",
