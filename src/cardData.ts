@@ -1,4 +1,4 @@
-import WorldOfBooks from "./images/WorldOfBooks.png";
+import worldOfBooks from "./images/WorldOfBooks.png";
 import pokemon from "./images/PokemonApi.png";
 import poe from "./images/Poe.png";
 import firebase from "./images/Firebase.png";
@@ -34,7 +34,7 @@ export const CardInformation = [
   },
   {
     id: 3,
-    cardImage: WorldOfBooks,
+    cardImage: worldOfBooks,
     projectName: "WorldOfBooks",
     description:
       "The very first 'Big Project' and the culminating assignment from my course at ITSchool was an ambitious library application.This project aimed to create a living library experience, complete with a custom API. Users were empowered to create, edit, and delete books, making it an immersive and interactive platform.",
