@@ -6,13 +6,13 @@ export function HomeComponent() {
     <Grid container>
       <Grid item md={8} xs={12}>
         <Typography gutterBottom variant="h2">
-          Junior React Front-End Developer 👋🏻
+          React Front-End Developer 👋🏻
         </Typography>
         <Typography variant="h4">
-          Hello there! I'm Mario, an enthusiastic Junior Front-End Developer eager to create amazing websites.
+          Hello there! I'm Mario, an enthusiastic Front-End Developer eager to create amazing websites.
         </Typography>
       </Grid>
-      <Grid item sx={{ display: "flex", justifyContent: "center", marginBottom: 8 }} md={4} xs={12}>
+      <Grid item sx={{ display: "flex", justifyContent: "center", marginBottom: 4 }} md={4} xs={12}>
         <img src={Poza} className="myImg" alt="My Image" />
       </Grid>
       <Grid item md={4} xs={12}>
@@ -43,7 +43,7 @@ export function HomeComponent() {
           />
         </Box>
       </Grid>
-      <Grid mt={8} container>
+      <Grid mt={8} className="socialLink" container>
         <Grid item md={8} xs={12}>
           <Typography className="mobileText" variant="h3">
             You can find me on Github or Linkedin

@@ -26,7 +26,9 @@ export function CardProject(props: CardProjectProps) {
       <Grid mb={4} container>
         <Grid item md={isImageLeftLayout ? 6 : 6} xs={12} style={{ order: isImageLeftLayout ? 1 : 2 }}>
           <motion.div whileHover={{ scale: 1.05 }}>
-            <img width={650} src={cardImage} alt="" />
+            <NavLink to={liveCode} target="_blank" rel="noopener noreferrer">
+              <img width={650} src={cardImage} alt="" />
+            </NavLink>
           </motion.div>
         </Grid>
         <Grid item md={isImageLeftLayout ? 6 : 6} xs={12} style={{ order: isImageLeftLayout ? 2 : 1 }}>

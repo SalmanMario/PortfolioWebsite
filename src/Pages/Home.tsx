@@ -29,7 +29,7 @@ export function Home() {
         </motion.div>
       </Box>
       <Box id="projects">
-        <Typography mb={8} textAlign={"center"} variant="h3">
+        <Typography mt={4} mb={8} textAlign={"center"} variant="h3">
           Each project has it's own identity and purpose
         </Typography>
         <Reveal>

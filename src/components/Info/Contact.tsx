@@ -133,6 +133,7 @@ export function Contact() {
           <TextareaAutosize
             placeholder="Message"
             className="placeholderColor borderColor"
+            name="Message"
             style={{
               fontFamily: "Inter",
               color: "#fff",

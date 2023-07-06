@@ -18,22 +18,6 @@ body,
   height: 100vh;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-}
-
-.pokemon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 75%;
-}
-
 .header {
   text-align: center;
   margin-bottom: 2rem;
@@ -60,7 +44,7 @@ img {
 .icon {
   width: 35px;
   height: 35px;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .iconSocial {
@@ -121,6 +105,14 @@ img {
     margin-right: 1.5rem;
   }
 
+  .socialLink {
+    margin-top: 2rem !important;
+  }
+
+  .myImg {
+    margin-top: 2rem;
+  }
+
   .projectAlign {
     margin: 0px;
   }
@@ -131,7 +123,7 @@ img {
 
   .mobileText {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .iconSocialMobile {
