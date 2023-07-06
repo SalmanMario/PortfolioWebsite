@@ -5,6 +5,8 @@ import { CardProject } from "../components/CardProject";
 import { CardInformation } from "../cardData";
 import clsx from "clsx";
 import { Contact } from "../components/Info/Contact";
+import { Reveal } from "../components/Reveal";
+import { motion } from "framer-motion";
 
 export function Home() {
   const theme = useTheme();
@@ -15,25 +17,35 @@ export function Home() {
   return (
     <Box id="fullheight">
       <Box className={centeredSection} id="home">
-        <HomeComponent />
+        <Reveal>
+          <HomeComponent />
+        </Reveal>
       </Box>
       <Box className={centeredSection} id="about">
-        <AboutComponent />
+        <motion.div whileHover={{ scale: 1.1 }}>
+          <Reveal>
+            <AboutComponent />
+          </Reveal>
+        </motion.div>
       </Box>
       <Box id="projects">
         <Typography mb={8} textAlign={"center"} variant="h3">
           Each project has it's own identity and purpose
         </Typography>
-        <Grid container justifyContent="center">
-          {CardInformation.map((elem) => (
-            <Grid key={elem.id} mb={4}>
-              <CardProject data={elem} />
-            </Grid>
-          ))}
-        </Grid>
+        <Reveal>
+          <Grid container justifyContent="center">
+            {CardInformation.map((elem) => (
+              <Grid key={elem.id} mb={4}>
+                <CardProject data={elem} />
+              </Grid>
+            ))}
+          </Grid>
+        </Reveal>
       </Box>
       <Box id="contact">
-        <Contact />
+        <Reveal>
+          <Contact />
+        </Reveal>
       </Box>
     </Box>
   );
