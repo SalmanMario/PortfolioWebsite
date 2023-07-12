@@ -42,7 +42,7 @@ export function Appbar() {
               textDecoration: "none",
             }}
           >
-            Salman Mario Portofolio
+            Salman Mario Portfolio
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -98,7 +98,7 @@ export function Appbar() {
               color: "#149ECA",
             }}
           >
-            Portofolio
+            Portfolio
           </Typography>
           <Box sx={{ ml: "auto", display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
