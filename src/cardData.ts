@@ -3,12 +3,13 @@ import Firebase from "./img/Firebase.png";
 import WorldOfBooks from "./img/WorldOfBooks.png";
 import Pokemon from "./img/PokemonApi.png";
 import Spotify from "./img/Spotify.png";
+import PoeBuildsRemake from "./img/PoeBuildsRemake.png";
 
 export const CardInformation = [
   {
     id: 1,
     cardImage: Poe,
-    projectName: "PoE Builds",
+    projectName: "PoE Builds Outdated",
     description:
       "This serves as a historical log for my favorite game.This is my first personal project.Every 3-4 months I'm saving the builds I played this league.",
     repository: "https://github.com/SalmanMario/PoeBuildsVite",
@@ -16,7 +17,7 @@ export const CardInformation = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     ],
-    liveCode: "https://poebuilds.netlify.app/",
+    liveCode: "https://poebuildsoutdated.netlify.app/",
   },
   {
     id: 2,
@@ -72,5 +73,20 @@ export const CardInformation = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
     ],
     liveCode: "https://myspotifyprojectclone.netlify.app/",
+  },
+  {
+    id: 6,
+    cardImage: PoeBuildsRemake,
+    projectName: "Poe Builds Remake",
+    description:
+      "I have successfully recreated my initial project. By transitioning from the Bootstrap framework,to the Material UI and leaving behind a JavaScript-based database in favor of the robust MongoDB, I have accomplished precisely what I set out to achieve.This project serves as a historical log for my favorite game.",
+    repository: "https://github.com/SalmanMario/Path-of-Exile-Builds",
+    items: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    ],
+    liveCode: "https://poebuilds.netlify.app/",
   },
 ];
